@@ -1,12 +1,12 @@
 function getRandomNumber(min, max)
 {
-    return Math.floor( Math.random() * (max - min + 1) + min );
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 function do_me()
 {
-    var min = document.getElementById("firstnum").value;
-    var max = document.getElementById("secondnum").value;
+    var min = parseInt(document.getElementById("firstnum").value);
+    var max = parseInt(document.getElementById("secondnum").value);
 
     /* make sure min and max are in proper order */
     if( min > max ) {
