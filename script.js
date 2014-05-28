@@ -1,6 +1,6 @@
 function getRandomNumber(min, max)
 {
-    return Math.floor( Math.random() * (max - min) + min );
+    return Math.floor( Math.random() * (max - min + 1) + min );
 }
 
 function do_me()
@@ -12,7 +12,7 @@ function do_me()
     if( min > max ) {
 	var swap = min
 	min = max;
-	max = min;
+	max = swap;
 	/* we only updated the variables, show those changes in the page too */
 	document.getElementById("firstnum").value = min;
 	document.getElementById("secondnum").value = max;
