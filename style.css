@@ -2,3 +2,11 @@
 {
 	font-family:Helvetica,sans-serif;
 }
+#heads
+{
+	visibility: hidden;
+}
+#tails
+{
+	visibility: hidden;
+}
