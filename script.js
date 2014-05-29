@@ -25,11 +25,9 @@ function rollDice()
 {
 	var dicenum = getRandomNumber(1,2);
 	if(dicenum === 1){
-	document.getElementById('tails').style.visibility = "hidden";
-	document.getElementById('heads').style.visibility = "visible";
-	}	
+    	document.getElementById("coinSide").innerHTML = "Heads!";
+}	
 	else {
-		document.getElementById('heads').style.visibility = "hidden";
-		document.getElementById('tails').style.visibility = "visible";
+    	document.getElementById("coinSide").innerHTML = "Tails!";
 	}
 }
