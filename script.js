@@ -27,7 +27,7 @@ function rollDice()
 	if(dicenum === 1){
 	document.getElementById('tails').style.visibility = "hidden";
 	document.getElementById('heads').style.visibility = "visible";
-}	
+	}	
 	else {
 		document.getElementById('heads').style.visibility = "hidden";
 		document.getElementById('tails').style.visibility = "visible";
