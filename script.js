@@ -24,9 +24,11 @@ function do_me()
 function rollDice()
 {
 	var dicenum = getRandomNumber(1,2);
-	if(dicenum = 1){
+	if(dicenum === 1){
 		document.getElementById('heads').style.visibility = "visible";
+		document.getElementById('tails').style.visibility = "hidden";
 	else
+		document.getElementById('heads').style.visibility = "hidden";
 		document.getElementById('tails').style.visibility = "visible";
 	}
 }
