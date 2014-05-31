@@ -21,13 +21,41 @@ function do_me()
     //returns a number between min and max
     document.getElementById("answer").innerHTML = getRandomNumber(min,max);
 }
-function rollDice()
+function flipCoin()
 {
-	var dicenum = getRandomNumber(1,2);
-	if(dicenum === 1){
-    	document.getElementById("coinSide").innerHTML = "Heads!";
+	var coinnum = getRandomNumber(1,2);
+	if(coinnum === 1){
+    		document.getElementById("coinSide").innerHTML = "Heads!";
 }	
 	else {
-    	document.getElementById("coinSide").innerHTML = "Tails!";
+    		document.getElementById("coinSide").innerHTML = "Tails!";
+	}
+}
+function rollDice ()
+{
+	var dicenum = getRandomNumber(1,6);
+	if(dicenum === 1) {
+		document.getElementsByTagName("img").style.visibility = "hidden";
+		document.getElementById('one').style.visibility = "visible";
+	}
+	else if(dicenum === 2) {
+		document.getElementsByTagName("img").style.visibility = "hidden";
+		document.getElementById('two').style.visibility = "visible";
+	}
+	else if(dicenum === 3) {
+		document.getElementsByTagName("img").style.visibility = "hidden";
+		document.getElementById('three').style.visibility = "visible";
+	}
+	else if(dicenum === 4) {
+		document.getElementsByTagName("img").style.visibility = "hidden";
+		document.getElementById('four').style.visibility = "visible";
+	}
+	else if(dicenum === 5) {
+		document.getElementsByTagName("img").style.visibility = "hidden";
+		document.getElementById('five').style.visibility = "visible";
+	}
+	else if(dicenum === 6) {
+		document.getElementsByTagName("img").style.visibility = "hidden";
+		document.getElementById('six').style.visibility = "visible";
 	}
 }
