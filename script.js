@@ -35,27 +35,27 @@ function rollDice ()
 {
 	var dicenum = getRandomNumber(1,6);
 	if(dicenum === 1) {
-		document.getElementsByClassName("dice");.style.visibility = "hidden";
+		document.getElementsByTagName("img").style.visibility = "hidden";
 		document.getElementById('one').style.visibility = "visible";
 	}
 	else if(dicenum === 2) {
-		document.getElementsByClassName("dice");.style.visibility = "hidden";
+		document.getElementsByTagName("img").style.visibility = "hidden";
 		document.getElementById('two').style.visibility = "visible";
 	}
 	else if(dicenum === 3) {
-		document.getElementsByClassName("dice");.style.visibility = "hidden";
+		document.getElementsByTagName("img").style.visibility = "hidden";
 		document.getElementById('three').style.visibility = "visible";
 	}
 	else if(dicenum === 4) {
-		document.getElementsByClassName("dice");.style.visibility = "hidden";
+		document.getElementsByTagName("img").style.visibility = "hidden";
 		document.getElementById('four').style.visibility = "visible";
 	}
 	else if(dicenum === 5) {
-		document.getElementsByClassName("dice");.style.visibility = "hidden";
+		document.getElementsByTagName("img").style.visibility = "hidden";
 		document.getElementById('five').style.visibility = "visible";
 	}
 	else if(dicenum === 6) {
-		document.getElementsByClassName("dice");.style.visibility = "hidden";
+		document.getElementsByTagName("img").style.visibility = "hidden";
 		document.getElementById('six').style.visibility = "visible";
 	}
 }
