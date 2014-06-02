@@ -35,52 +35,21 @@ function rollDice ()
 {
 	var dicenum = getRandomNumber(1,6);
 	if(dicenum === 1) {
-		document.getElementById('one').style.visibility = "visible";
-		document.getElementById('two').style.visibility = "hidden";
-		document.getElementById('three').style.visibility = "hidden";
-		document.getElementById('four').style.visibility = "hidden";
-		document.getElementById('five').style.visibility = "hidden";
-		document.getElementById('six').style.visibility = "hidden";
-
+		document.getElementById('dice').src = "images/one.png";
 	}
 	else if(dicenum === 2) {
-		document.getElementById('one').style.visibility = "hidden";
-		document.getElementById('two').style.visibility = "visible";
-		document.getElementById('three').style.visibility = "hidden";
-		document.getElementById('four').style.visibility = "hidden";
-		document.getElementById('five').style.visibility = "hidden";
-		document.getElementById('six').style.visibility = "hidden";
+		document.getElementById('dice').src = "images/two.png";
 	}
 	else if(dicenum === 3) {
-		document.getElementById('one').style.visibility = "hidden";
-		document.getElementById('two').style.visibility = "hidden";
-		document.getElementById('three').style.visibility = "visible";
-		document.getElementById('four').style.visibility = "hidden";
-		document.getElementById('five').style.visibility = "hidden";
-		document.getElementById('six').style.visibility = "hidden";
+		document.getElementById('dice').src = "images/three.png";
 	}
 	else if(dicenum === 4) {
-		document.getElementById('one').style.visibility = "hidden";
-		document.getElementById('two').style.visibility = "hidden";
-		document.getElementById('three').style.visibility = "hidden";
-		document.getElementById('four').style.visibility = "visible";
-		document.getElementById('five').style.visibility = "hidden";
-		document.getElementById('six').style.visibility = "hidden";
+		document.getElementById('dice').src = "images/four.png";
 	}
 	else if(dicenum === 5) {
-		document.getElementById('one').style.visibility = "hidden";
-		document.getElementById('two').style.visibility = "hidden";
-		document.getElementById('three').style.visibility = "hidden";
-		document.getElementById('four').style.visibility = "hidden";
-		document.getElementById('five').style.visibility = "visible";
-		document.getElementById('six').style.visibility = "hidden";
+		document.getElementById('dice').src = "images/five.png";
 	}
 	else if(dicenum === 6) {
-		document.getElementById('one').style.visibility = "hidden";
-		document.getElementById('two').style.visibility = "hidden";
-		document.getElementById('three').style.visibility = "hidden";
-		document.getElementById('four').style.visibility = "hidden";
-		document.getElementById('five').style.visibility = "hidden";
-		document.getElementById('six').style.visibility = "visible";
+		document.getElementById('dice').src = "images/six.png";
 	}
 }
